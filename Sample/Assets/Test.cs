@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+public class Test : MonoBehaviour
+{
+    void Start()
+    {
+        Vector2 PlayerPos = new Vector2(0.0f, 0.0f);
+    
 
-        int sum = 0;
-        for(int i = 1; i <= 10; i++) { 
-            sum += i;
+    int[] points = new int[5];
+
+        for(int i= 0; i <  5; i++) {
+            PlayerPos.x += 2.0f;
+            Debug.Log(PlayerPos);
         }
-        Debug.Log(sum);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
